@@ -23,7 +23,7 @@
 <input type="hidden" name="act" value="user-save" />
 <input type="hidden" name="userid" value="[% IF users.data.userid %][% users.data.userid %][% ELSE %]0[% END %]" />
 
-<table width="100%">
+<table width="100%" summary="User Edit Form">
 <tr><th width="150">Email *</th>
     <th class="alert">[% users.data.email_err %]</th>
     <td><input type="text" name="email" value="[% users.data.email %]" size="50" /></td>
@@ -84,7 +84,7 @@
   <div class="userinfo">
     [% IF users.preview.link %]<img src="[% webpath %]/[% users.preview.link %]" alt="[% users.preview.tag %]" align="right" />[% END %]
     [% IF users.preview.aboutme ; users.preview.aboutme ; END %]
-    [% IF users.preview.url %]<p><b>My Web Page:</b> <a href="[% preview.url %]">[% users.preview.url %]</a></p>[% END %]
+    [% IF users.preview.url %]<p><strong>My Web Page:</strong> <a href="[% preview.url %]">[% users.preview.url %]</a></p>[% END %]
     [% IF ! users.preview.aboutme AND ! users.preview.url %]<p>... to be completed.</p>[% END %]
   </div>
 </div>
