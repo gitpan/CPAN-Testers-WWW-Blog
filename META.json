@@ -1,6 +1,6 @@
 {
     "name": "CPAN-Testers-WWW-Blog",
-    "version": "1.06",
+    "version": "1.07",
     "abstract": "The CPAN Testers Blog website",
     "author": [
         "Barbie (BARBIE) <barbie@cpan.org>"
@@ -24,9 +24,9 @@
         "runtime" : {
             "requires" : {
                 "perl": "5.006",
-                "Labyrinth": "5.15",
+                "Labyrinth": "5.20",
                 "Labyrinth::DIUtils::ImageMagick": "5.04",
-                "Labyrinth::Plugin::Core": "5.09",
+                "Labyrinth::Plugin::Core": "5.14",
                 "Labyrinth::Plugin::Articles::Diary": "1.00",
                 "Labyrinth::Plugin::Event": "1.01"
             }
@@ -48,7 +48,7 @@
     "provides": {
         "CPAN::Testers::WWW::Blog": {
             "file": "lib/CPAN/Testers/WWW/Blog.pm",
-            "version": "1.06"
+            "version": "1.07"
         }
     },
     "no_index": {
